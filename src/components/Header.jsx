@@ -19,19 +19,19 @@ function Header() {
       </div>
 
       <div className="hidden md:flex space-x-5">
-        <Link
+        {/* <Link
           className="text-md text-slate-600 py-2 hover:text-slate-400 transition duration-500 rounded-md text-center"
           href="/match-with-therapists"
         >
           MATCH WITH A THERAPIST
-        </Link>
+        </Link> */}
 
-        <Link
+        {/* <Link
           className="text-md text-slate-600 py-2 hover:text-slate-400 transition duration-500 rounded-md text-center"
           href="/therapist-sign-in-sign-up"
         >
           ARE YOU A THERAPIST
-        </Link>
+        </Link> */}
         <Link
           className="text-md text-slate-600 py-2 hover:text-slate-400 transition duration-500 rounded-md text-center"
           href="/therapist-sign-in-sign-up"
@@ -62,19 +62,19 @@ function Header() {
               </div>
 
               <div className="flex flex-col">
-                <Link
+                {/* <Link
                   className="text-lg text-slate-600 my-10 hover:text-slate-400 transition duration-500 rounded-md text-center"
                   href="/match-with-therapists"
                 >
                   MATCH WITH A THERAPIST
-                </Link>
+                </Link> */}
 
-                <Link
+                {/* <Link
                   className="text-lg text-slate-600 my-10 hover:text-slate-400 transition duration-500 rounded-md text-center"
                   href="/therapist-sign-in-sign-up"
                 >
                   ARE YOU A THERAPIST
-                </Link>
+                </Link> */}
                 <Link
                   className="text-lg text-slate-600 my-10 hover:text-slate-400 transition duration-500 rounded-md text-center"
                   href="/therapist-sign-in-sign-up"

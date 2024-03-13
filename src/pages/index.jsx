@@ -28,6 +28,7 @@ import {
 import diversityImage from "../assets/images/diversity.jpg";
 import therapyImage from "../assets/images/therapy.jpg";
 import worldWideImage from "../assets/images/world-wide-therapists.jpg";
+import PhotoGallery from "../components/photogallery";
 
 const images = [worldWideImage, diversityImage, therapyImage];
 
@@ -56,7 +57,7 @@ export default function Home() {
     <div>
       <Header />
       <div>
-        <div className="w-[100vw] h-[100vh] bg-[url('https://images.unsplash.com/photo-1506956191951-7a88da4435e5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-[position:100%_60%] bg-no-repeat">
+        <div className="w-[100vw] h-[100vh] bg-[url('../../public/assets/images/bestempathylandingshowcase.jpg')] bg-[position:100%_60%] bg-no-repeat">
           <div className="w-full h-full backdrop-brightness-50">
             <div className="flex flex-col items-center lg:items-start justify-center mx-[8%] pt-[3.5%]">
               <p className="text-[40px] text-white lg:w-[40%] text-center">
@@ -85,7 +86,7 @@ export default function Home() {
           </div>
         </div>
         {/* Why Best Empathy */}
-        <div className="flex flex-row px-[10%] justify-between mt-[2.5%]">
+        <div className="flex flex-col lg:flex-row px-[10%] justify-between mt-[2.5%]">
           {/* Accordion */}
           <div className="lg:w-[45%] h-[500px]">
             <p className="text-[20px] font-semibold ml-2 my-5 ">
@@ -190,9 +191,9 @@ export default function Home() {
               </AccordionBody>
             </Accordion>
           </div>
-          <div className="hidden lg:flex lg:w-[45%]">
+          <div className="w-[100%] h-[100%] lg:w-[45%] mb-[5%]">
             <Image
-              className={`w-[100%] h-[450px]`}
+              className={`w-[100%] h-[100%]`}
               src={displayImage}
               alt="Badge"
               width={500}
@@ -200,10 +201,33 @@ export default function Home() {
             />
           </div>
         </div>
+
+        {/* Badges */}
         <div className="flex justify-between px-[20%] bg-blue-gray-300 ">
           <Image className="w-[100px] h-[150px]" src={banner1} alt="Badge" />
           <Image className="w-[100px] h-[150px]" src={banner2} alt="Badge" />
           <Image className="w-[100px] h-[150px]" src={banner3} alt="Badge" />
+        </div>
+
+        {/* Image Gallery of Therapists */}
+        <div className="flex flex-row justify-center mt-[50px] w-[100%] px-[10%]">
+          <PhotoGallery />
+        </div>
+
+        {/* Find Therapists from around the world */}
+
+        <div className="mx-[10%] p-[5%] mt-[50px] h-[50vh] bg-blue-gray-500 text-center flex flex-col items-center justify-center">
+          <h1 className="text-[30px]">
+            Find a Therapist that suits <span className=" italic">your</span>{" "}
+            exact needs and preferences
+          </h1>
+          <div className="text-[20px] mt-10">
+            <p>The therapist you chose is key to getting the help you need.</p>
+            <p>
+              You deserve to have a say in which therapist will accomapny you on
+              this journey to better health
+            </p>
+          </div>
         </div>
       </div>
       <Footer />
