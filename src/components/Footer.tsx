@@ -12,38 +12,42 @@ function Footer() {
   return (
     <div className=" px-[7%] py-[75px]">
       {/* Column 1 */}
-      <div className="flex flex-col items-center py-10 text-center items-center">
+      <div className="flex flex-col  py-10 text-center items-center">
         {/* Social Media Icons */}
         <div className="flex flex-row ">
           <Link
+            target="_blank"
             className="text-md text-slate-600 p-2 hover:text-slate-400 transition duration-500 rounded-md text-center"
-            href="/therapist-pricing"
+            href="https://www.facebook.com/profile.php?id=100092714716515"
           >
             <FontAwesomeIcon className="" icon={faFacebookSquare} size="2x" />
           </Link>
           <Link
+            target="_blank"
             className="text-md text-slate-600 p-2 hover:text-slate-400 transition duration-500 rounded-md text-center"
-            href="/therapist-pricing"
+            href="https://twitter.com/bestempathy"
           >
             <FontAwesomeIcon className="" icon={faTwitter} size="2x" />
           </Link>
 
           <Link
+            target="_blank"
             className="text-md text-slate-600 p-2 hover:text-slate-400 transition duration-500 rounded-md text-center"
-            href="/therapist-pricing"
+            href="https://www.instagram.com/best.empathy/"
           >
             <FontAwesomeIcon className="" icon={faInstagramSquare} size="2x" />
           </Link>
 
           <Link
+            target="_blank"
             className="text-md text-slate-600 p-2 hover:text-slate-400 transition duration-500 rounded-md text-center"
-            href="/therapist-pricing"
+            href="www.pinterest.com/bestempathy"
           >
             <FontAwesomeIcon className="" icon={faPinterest} size="2x" />
           </Link>
           <Link
             className="text-md text-slate-600 p-2 hover:text-slate-400 transition duration-500 rounded-md text-center"
-            href="/therapist-pricing"
+            href="#"
           >
             <FontAwesomeIcon className="" icon={faLinkedin} size="2x" />
           </Link>

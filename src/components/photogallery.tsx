@@ -7,7 +7,7 @@ import { photos } from "../../public/assets/images/photos";
 export default function PhotoGallery() {
   return (
     <div className="w-[100%]">
-      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 5 }}>
+      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 4, 900: 5 }}>
         <Masonry gutter="10px">
           {photos.map((photo, idx) => (
             <div
@@ -15,6 +15,7 @@ export default function PhotoGallery() {
                 `w-[150px] h-[225px] md:w-[175px] md:h-[262.5px] lg:w-[205px] lg:h-[300px] ` +
                 photo.classNames
               }
+              key={idx}
             >
               <Image
                 src={photo.src}
